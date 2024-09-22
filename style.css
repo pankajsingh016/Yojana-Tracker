@@ -1,20 +1,61 @@
 :root{
-    --background: #101114;
-    --primary-color: #1C1D20;
-    --secondary-color: #4A4D57;
-    --accent-color: #00FFC4;
-    --text-color: #F9F9F9;
+    --background-color: rgb(11, 44, 65);
+    --headline-color: #b2d2ddc5;
+    --add-button-color: #1fd261;
 }
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
-html{
+body{
+    background-color: var(--background-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1rem;
-    color: var(--text-color);
-    background-color: var(--background);
 }
 
+.group-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.group-1 h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--headline-color);
+    background-color: rgb(11, 44, 65);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.group-1 form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.input-todo{
+    width: 40%;
+    min-width: 200px;
+    font-size: 20px;
+    padding: 5px 20px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 30px 0px 0px 30px;
+}
+.input-todo:focus{
+    outline: none;
+}
+
+#add-todo{
+    width: 10%;
+    font-size:1rem;
+    font-weight: 700;
+    background-color: var(--add-button-color);
+    border: 1px solid white;
+    border-radius: 0px 30px 30px 0px;
+    cursor: pointer;
+}
