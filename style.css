@@ -42,7 +42,7 @@ body{
     margin-bottom: 22px;
 }
 
-.input-todo{
+#input-todo{
     width: 30%;
     min-width: 200px;
     max-width: 400px;
@@ -53,7 +53,7 @@ body{
     border-radius: 30px 0px 0px 30px;
     caret-color: rgb(11, 44, 65);
 }
-.input-todo:focus{
+#input-todo:focus{
     outline: none;
 }
 
@@ -69,7 +69,7 @@ body{
 }
 
 
-.todo-area{
+#todo-area{
     background-color: white;
     padding: 2% 2%;
     width: 100%;
@@ -83,10 +83,10 @@ body{
     html{
         font-size: 12pt;
     }
-    .input-todo{
+    #input-todo{
         width: 20%;
     }
-    .todo-area{
+    #todo-area{
         width: 80%;
     }
 }
