@@ -68,8 +68,7 @@ function renderTodos(){
     todoList.innerHTML = "";
     todos.forEach((todos,todoIndex)=>{
         todoItem = createTodo(todos,todoIndex);
-        setTimeout(1000, todoList.append(todoItem));
-        // todoList.append(todoItem);
+        todoList.append(todoItem);
     })  
     saveTodos();
 }
